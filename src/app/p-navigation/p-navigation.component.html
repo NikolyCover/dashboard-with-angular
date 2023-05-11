@@ -1,0 +1,16 @@
+<mat-drawer-container class="example-container" [hasBackdrop]="false">
+    <mat-drawer #drawer mode="side" opened="true">
+        <div class="menu">
+            <button mat-raised-button>Sensores</button>
+            <button mat-raised-button>Proprietários</button>
+            <button mat-raised-button>Configurações</button>
+        </div>
+    </mat-drawer>
+    <mat-drawer-content>
+      <button mat-raised-button (click)="drawer.toggle()">Toggle drawer</button>
+
+      <router-outlet></router-outlet>
+
+    </mat-drawer-content>
+  </mat-drawer-container>
+  
